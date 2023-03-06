@@ -1,0 +1,139 @@
+<section class="b-g">
+
+         <section class="">
+    <div class="container tt">
+        <div class="row   mm">
+
+            <div class="col-12 col-md-2 col-lg-2 info-2 ">
+                <a routerLink="/details">  <div class="mm">
+                    <img src="../../../assets/Shape (3).svg" alt="">
+                  <h5>التفاصيل</h5>
+                    <h6>Details</h6>
+                    <h4>4</h4>
+                 </div></a>
+
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 info-2">
+                <a routerLink="/fuunctionatities"> <div>
+                    <img src="../../../assets/Shape (2).svg" alt="">
+                    <h5>المهام</h5>
+                    <h6>Functionalities</h6>
+                    <h4>3</h4>
+                 </div></a>
+
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 info-3">
+                <a routerLink="/foundation"> <div>
+                   <img src="../../../assets/Shape (1).svg" alt="">
+                   <h5>الاساسيات</h5>
+                   <h6>Foundations</h6>
+                   <h4>2</h4>
+                </div></a>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 ">
+
+                <div class="row info-1">
+                    <div class="col-2  info-img">
+
+                        <img src="../../../assets/Shape.svg" alt="">
+
+                        <h5>platform</h5>
+                    </div>
+                    <div class="col-10 row mt-5">
+                        <div class="col-11 col-md-11 col-lg-11">
+
+                            <h4>اختار المنصات اللي عليها البرنامج<span ></span></h4>
+
+
+                        </div>
+
+                        <div class="col-1 col-md-1 col-lg-1">
+                            <div class="diamond"></div>
+                            <h1>1</h1></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="container" >
+    <div class="container mt-2">
+        <div class="row plat">
+            <div class="col-12 col-md-3 col-lg-3 left">
+                <app-leftbar  [count]="count" [price]="price"></app-leftbar>
+
+            </div>
+            <div class="col-12 col-md-9 col-lg-9 rit">
+                <h5>تقدر تختار أكتر من واحدة</h5>
+                <div class="row container">
+
+                    <div class="col-12 col-md-3 col-lg-3 com" *ngFor="let item of platforms ,let i =index" >
+                        <!-- <div *ngIf="styleFlag" (click)="test(item.id)" >
+                            <div     class="ios mt-5"  [ngClass]="[ Ngclass]" >
+                                <span><i class="fas fa-check-circle"></i></span>
+                                <div         (click)="in(item.id,i)" class=""  >  <img src="../../../assets/Apple Logo.svg" alt="" srcset="">
+                                    <h5>{{item.EnName}}</h5>
+                                    <h5>+{{item.hours}} Hr</h5>
+                                    <h5>+{{item.price}} EGP</h5>
+                                </div>
+                                <div class="bo-img ">
+                                    <img src="../../../assets/Pattern.png" alt="" srcset="">
+                                </div>
+
+
+                            </div>
+                        </div> -->
+
+                        <div *ngIf="item.isSelected==false" (click)="getplatform(item.id)">
+                            <div   class="ios mt-5" >
+                                <span><i class="fas fa-check-circle"></i></span>
+                                <div         (click)="in(item.id,i)" class=""  (click)="selected(item)"  >  <img src="../../../assets/Apple Logo.svg" alt="" srcset="">
+                                    <h5>{{item.EnName}}</h5>
+                                    <h5>+{{item.hours}} Hr</h5>
+                                    <h5>+{{item.price}} EGP</h5>
+                                </div>
+                                <div class="bo-img ">
+                                    <img src="../../../assets/Pattern.png" alt="" srcset="">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div *ngIf="item.isSelected==true" (click)="getplatform(item.id)">
+                          <div   class="activ mt-5" >
+                              <span><i class="fas fa-check-circle"></i></span>
+                              <div         (click)="in(item.id,i)" class=""  (click)="notselected(item)"  >  <img src="../../../assets/Apple Logo.svg" alt="" srcset="">
+                                  <h5>{{item.EnName}}</h5>
+                                  <h5>+{{item.hours}} Hr</h5>
+                                  <h5>+{{item.price}} EGP</h5>
+                              </div>
+                              <div class="bo-img ">
+                                  <img src="../../../assets/Pattern.png" alt="" srcset="">
+                              </div>
+
+                          </div>
+                      </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+</section>
+

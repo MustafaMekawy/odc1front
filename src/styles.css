@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.b-c{
+    background-color: #1e1e1e;
+}
+.f-s{
+    font-family: 'Alexandria';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 75px;
+/* or 150% */
+
+text-align: center;
+
+}

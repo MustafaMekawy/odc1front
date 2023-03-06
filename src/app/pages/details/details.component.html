@@ -1,0 +1,153 @@
+<section class="b-g">
+    <section class="">
+        <div class="container tt">
+            <div class="row   mm">
+
+                
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <div class="row info-1">
+                        <div class="col-2  info-img">
+
+                            <img src="../../../assets/Shape (8).svg" alt="">
+                            <h5>Details</h5>
+
+
+                        </div>
+                        <div class="col-10 row mt-3">
+                            <div class="col-11 col-md-11 col-lg-11">
+                                <div class="diamond"></div>
+                                <h4 class="mt-4">التفاصيل</h4>
+
+
+
+                            </div>
+
+                            <div class="col-1 col-md-1 col-lg-1 nr">
+                                <div class="diamond"></div>
+                                <h1>4</h1>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-2  info-2">
+                    <a routerLink="/fuunctionatities">
+                        <div class="mm">
+                            <img src="../../../assets/Shape (9).svg" alt="">
+                            <h5>المهام</h5>
+                            <h6>Functionalities</h6>
+                            <h4 class="chek"><span><i class="fas fa-check-circle"></i></span>3</h4>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 info-2">
+                    <a routerLink="/foundation">
+                        <div>
+                            <img src="../../../assets/Shape (6).svg" alt="">
+                            <h5>الاساسيات</h5>
+                            <h6>Foundations</h6>
+                            <h4 class="chek"><span><i class="fas fa-check-circle"></i></span>2</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-2 col-lg-2 info-3">
+                    <a routerLink="/platform">
+                        <div>
+                            <img src="../../../assets/Shape (5).svg" alt="">
+                            <h5>المنصات</h5>
+                            <h6>platform</h6>
+                            <h4 class="chek"><span><i class="fas fa-check-circle"></i></span>1</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container mt-2">
+            <div class="row plat">
+                <div class="col-12 col-md-3 col-lg-3 left">
+                    <app-leftbar [count]="count" [price]="price"></app-leftbar>
+                </div>
+                <div class="col-12 col-md-9 col-lg-9 rit row">
+                    
+                  
+                     <div class="col-12 col-md-3 col-lg-3">
+                        <div class="tite2 mt-5">
+                         <h3>المساعدة</h3>
+                         <h5>Help</h5>
+                        
+                        </div>
+                        <div class="mt-3" *ngFor="let item of action">
+                            <button class="but"><span class="span1">{{item.ArName}}</span><span class="span2">{{item.EnName}}</span></button>
+                           
+                            </div>
+                            
+                     </div>
+                     <div class="col-12 col-md-3 col-lg-3">
+                        <div class="tite2 mt-5">
+                       <h3>الاعدادات</h3>
+                         <h5>Settings</h5>
+                        
+                        </div>
+                        <div class="mt-3">
+                            <button class="but"><span class="span1">معلومات أخرى</span><span class="span2">Learn More</span></button>
+                           
+                            </div>
+                            <div class="mt-3">
+                                <button class="but"><span class="span1">معلومات أخرى</span><span class="span2">Learn More</span></button>
+                               
+                                </div>
+                     </div>
+                     <div class="col-12 col-md-3 col-lg-3">
+                        <div class="titel mt-5">
+                        <h4>الصفحة التعرفية</h4>
+                         <h5>Landing Page</h5>
+                        
+                        </div>
+                        <div class="mt-3">
+                            <button class="but"><span class="span1">معلومات أخرى</span><span class="span2">Learn More</span></button>
+                           
+                            </div>
+                     </div>
+                     <div class="col-12 col-md-3 col-lg-3">
+                        <div>
+                            <div class="card">
+                                <div class="card-item row" *ngFor="let item of functions">
+                                    <div class="col-12 col-md-4 col-lg-">
+                                        <p class="card-body"><i class="fas fa-angle-left"></i></p>
+                                    </div>
+                                 <div class="col-12 col-md-8 col-lg-8 card-titel"> <h6>{{item.ArName}}</h6>
+                                    <p>{{item.EnName}}</p>
+                                </div>   
+                                   
+                               
+                            </div>
+                            
+                  
+                       
+                   
+                
+                            </div>
+                            <div class="mt-2">
+                                <h4>تحكم في تفاصيل المهام</h4>
+                            </div>
+                            </div>
+
+                     </div> <div class="mb-5"><h3>تم اختيار التفاصيل المقترحة، التعديل غير ضروري</h3>
+                        <p>Recommended features are selected. Editing is not necessary</p>
+                    </div>
+                    </div>
+                   
+            </div>
+        </div>
+    </section>
+</section>

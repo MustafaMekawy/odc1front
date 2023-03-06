@@ -1,0 +1,159 @@
+.left{
+    height:610px;
+    width: 285px;
+    background-color: black;
+    text-align: center;
+    border-top: 1px solid #B1B1B8;
+    border-left: 1px solid #101010;
+    border-bottom-left-radius: 10px;
+}
+.left h3{
+    color: #FFFFFF;
+}
+
+.info-1{
+   padding-top: 10px;
+}
+.info-2{
+padding-top: 10px;
+
+}
+.info-2 h6{
+    color: #FFFFFF;
+}
+.img{
+    position: relative;
+}
+.wingr{
+    position: absolute;
+    top: -65px;
+    right: 65px;
+}
+.wingl{
+    position: absolute;
+    top: -65px;
+   left:  65px; 
+}
+.info-3{
+    position: relative;
+}
+.circle2::after{
+    content: '';
+    background-color: #DE6758;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 10px;
+
+bottom: 23.93%;}
+.circle2::before{
+    content: '';
+    background-color: #DE6758;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+  right:215px;
+
+bottom: 23.93%;}
+.hr{
+    margin: auto;
+    width: 80%;
+   margin-top: 30px; 
+  color: #B1B1B8;
+   
+}
+.info-4 h6{
+    color: #FFFFFF;
+}
+.info-5{
+    position: relative;
+   
+}
+.circle3::after{
+    content: '';
+    background-color: #F4BF44;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 10px;
+
+bottom: 23.93%;}
+.circle3::before{
+    content: '';
+    background-color: #F4BF44;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+  right:209px;
+
+bottom: 23.93%;}
+.te{
+    position: relative;
+}
+.te h6::before{
+    content: "";
+    
+    border-bottom: 1px solid #FFFFFF;
+    width: 80px;
+    position: absolute;
+    height: 8px;
+    top: 49%;
+    left: 34%;
+    transform: rotate(-45deg);
+}
+.te h6 p::before{
+    content: "";
+    
+    border-top: 1px solid #FFFFFF;
+    width: 46px;
+    position: absolute;
+    height: 8px;
+    top: 47%;
+    left:   37%;
+}
+.te h6 p::after{
+    content: "";
+    
+    border-top: 1px solid rgba(12, 101, 237, .85);
+    width: 46px;
+    position: absolute;
+    height: 8px;
+    top: 47%;
+    right:  37%;
+    transform: rotate(-45deg);
+}
+.te h2::after{
+    content: "";
+    
+    border-bottom: 2px solid rgba(12, 101, 237, .85);
+    width: 80px;
+    position: absolute;
+    height: 8px;
+    top: 49%;
+    right: 34%;
+}
+.next{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin: auto;
+}
+.next span{
+   
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: center;
+    line-height: 4;
+}
+.hr2{
+  
+    
+   margin-top: 30px;
+  color: #B1B1B8;
+   
+}

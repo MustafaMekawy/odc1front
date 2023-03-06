@@ -1,0 +1,170 @@
+<section class="b-g">
+
+    <section class="">
+        <div class="container tt">
+            <div class="row   mm">
+
+                <div class="col-12 col-md-2 col-lg-2  info-3">
+                    <a routerLink="/details">
+                        <div class="mm">
+                            <img src="../../../assets/Shape (3).svg" alt="">
+                            <h5>التفاصيل</h5>
+                            <h6>Details</h6>
+                            <h4>4</h4>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <div class="row info-1">
+                        <div class="col-2  info-img">
+
+                            <img src="../../../assets/Shape (7).svg" alt="">
+                            <h5>Functionalities</h5>
+
+
+                        </div>
+                        <div class="col-10 row mt-3">
+                            <div class="col-11 col-md-11 col-lg-11">
+                               
+                                <h4 class="mt-4">المهام</h4>
+
+
+
+                            </div>
+
+                            <div class="col-1 col-md-1 col-lg-1 nr">
+                                <div class="diamond"></div>
+                                <h1>3</h1>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 info-2">
+                    <a routerLink="/foundation">
+                        <div>
+                            <img src="../../../assets/Shape (6).svg" alt="">
+                            <h5>الاساسيات</h5>
+                            <h6>Foundations</h6>
+                            <h4 class="chek"><span><i class="fas fa-check-circle"></i></span>2</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-2 col-lg-2 info-3">
+                    <a routerLink="/platform">
+                        <div>
+                            <img src="../../../assets/Shape (5).svg" alt="">
+                            <h5>المنصات</h5>
+                            <h6>platform</h6>
+                            <h4><span><i class="fas fa-check-circle"></i></span>1</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="">
+        <div class="container mt-2">
+            <div class="row plat">
+                <div class="col-12 col-md-3 col-lg-3 left">
+                    <app-leftbar [count]="count" [price]="price"></app-leftbar>
+                </div>
+                <div class="col-12 col-md-9 col-lg-9 rit row ">
+                    <div class="col-12 col-md-6 col-lg-6 row mt-2">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div>
+                                <h1>مدي التعقد</h1>
+                                <h4>Complexity</h4>
+                            </div>
+                            <div *ngFor="let item of time" class="time">
+                                <span class="item1"> + {{item}} hurs</span>
+
+                            </div>
+
+                            <!-- <div class="progress mt-5" style="height: 5px; background-color: rgba(0, 0, 0, 0.275);">
+                                <div class="progress-bar " role="progressbar" style="width: 0;" data-width="80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> -->
+                            <div class="mt-4 range">
+                                <input type="range" class="pricerange" style="width: 80%" data-width="{{price}}%"  >
+                            </div>
+                            <div *ngFor="let item of money" class="money">
+                                <span class="money1"> + {{item}} EGP</span>
+
+                            </div>
+
+
+                        </div>
+                      
+                        <div class="col-12 col-md-12 col-lg-12 mt-5 ">
+                            <div class="hr"></div>
+                            <div>
+                                <h3>الموصفات الرئسية</h3>
+                                <h5>Main Features</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-4 " *ngFor="let item of Features">
+                                    <div>
+                                        <div >
+                                            <p class="first">{{item.ArName}}<span>.</span></p>
+                                            <p class="second">{{item.EnName}}</p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="col-12 col-md-4 col-lg-4 Features">
+                                    <div>
+                                        <div *ngFor="let item of Features">
+                                            <p class="first">{{item.first}}</p>
+                                            <p class="second">{{item.second}}</p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-4 ">
+                                    <div>
+                                        <div *ngFor="let item of Features">
+                                            <p class="first">{{item.first}}<span>.</span></p>
+                                            <p class="second">{{item.second}}</p>
+
+                                        </div>
+                                    </div> -->
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-12 col-md-6 col-lg-6 prog">
+                        <div>
+                            <h4>اختار المهام المطلوبة للبرنامج</h4>
+                        </div>
+                        <div class="hr2"></div>
+                        <div *ngFor="let item of prog  let i = index">
+                            <div class="mt-5 prog1" [ngClass]="(styleFlag == true) ? Ngclass:'prog1'" (click)="in(i)" (click)=" getfeature(item.id)" (click)="selectFunction(item)">
+                                <p>{{item.ArName}}</p>
+                                <span><i class="fas fa-check-circle"></i></span>
+                            <p>{{item.EnName}}</p>
+                             <div> <img src="../../../assets/Pattern (1).svg" alt="" srcset=""></div>
+                        </div>
+                       
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</section>

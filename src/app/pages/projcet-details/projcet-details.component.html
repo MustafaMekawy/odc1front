@@ -1,0 +1,92 @@
+<section class="b-g">
+    <div > 
+        <div class="container titel " [ngClass]="(styleFlag == true) ? Ngclass:'titel'">
+            <p class="shep"><span class="diamond "></span></p>
+        <h1 class="details">تفاصيل المشروع  </h1>
+       
+    </div>
+</div>
+<div class="container">
+    <div class="container row b-g rotate"[ngClass]="(styleFlag == true) ? ngclass:'rotate'">
+    <div class="col-12 col-md-6 col-lg-6 row Pattern">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="">
+                <img src="../../../assets/Pattern.svg">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 info">
+            <div class="info-1">
+                <img src="../../../assets/Coin Icon.svg">
+                
+            </div>
+            <div class="info-2">
+                <img src="../../../assets/فلوس.svg" alt="" srcset="">
+                <h6>Money</h6>
+                <div class="img">
+                    <img src="../../../assets/Wing Right.svg" alt="" srcset="" class="wingr">
+                    <img src="../../../assets/Wing Left.svg" alt="" srcset="" class="wingl">
+                </div>
+            </div>
+            
+            <div class="info-3">
+            
+                <h3 class="circle2">{{x}} EGP</h3>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-6 ">
+        <div class="time">
+           
+            <div class="info-4 mt-5">
+                <img src="../../../assets/Time Icon.svg" alt="" srcset="">
+                <div class="mt-3 te "> 
+                     <div class=" span-time"></div>
+                     <img src="../../../assets/وقت.svg" alt="" srcset="">
+                     <h6><p > Time</p></h6>
+                    </div>
+              
+            </div>
+            <div class="info-5 mb-1">
+            
+                <h3 class="circle3">{{h}} Hrs</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div >
+    <div class="container teme b-g">
+        <div class="container tt row">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <div class="info-6 ">
+                    <div class="next " (click)="rota()">
+                      <a > <span><i class="fas fa-redo-alt"></i></span></a> 
+                    </div>
+                <h3 class="mt-1">قيم مرة أخرى</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6  row">
+                <div *ngFor="let item of data2" class="col-12 col-md-4 col-lg-4 data2">
+                   
+                    <h5> {{item.EnName}} مطور  </h5>
+                   
+                    <p>{{item.EnName}} Developer</p>
+                    <h6>{{item.price}} Egp</h6>
+                    <h6>{{item.hours}} Hrs</h6>
+                    
+
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <h4>فريق العمل</h4>
+                <span>Team Members</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   
+</section>

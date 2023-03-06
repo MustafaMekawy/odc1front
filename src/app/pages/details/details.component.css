@@ -1,0 +1,191 @@
+.nav{
+    background-color: black;
+    }
+    .b-g{
+        background-color: black;
+        overflow: hidden;
+    }
+    .mm{
+        border-top-left-radius: 10px;
+       
+    }
+    /* .tt{
+        padding-top: 30px !important;
+    } */
+    
+    .info-1{
+        background-color:#F4BF44;
+        align-items: center;
+        align-content: flex-end;
+        
+        max-height: 140px;
+        overflow: hidden;
+        animation: left-move 1s linear forwards;
+       
+        
+    }
+    .info-1 h1{
+        color: #FFFFFF;
+    }
+    .info-1 h4{
+        padding-left: 195px;
+        color: #FFFFFF;
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+    .nr{
+        padding-top: 45px;
+    }
+    .info-img{
+        padding-left: 0;
+    }
+    .info-img h5{
+        padding-left: 10px;
+        color: #FFFFFF !important;
+    }
+    .info-1 img{
+        width: 100%;
+       height: 100%;
+    }
+    .info-1 h5{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .box{
+        width: 20px;
+        height: 20px;
+        background-color:  #F4BF44;
+       border: black;
+       /* border-left: 10px solid transparent;
+       border-right: 10px solid transparent;
+       border-top: 10px solid transparent;
+       border-bottom: 10px solid transparent; */
+       border-top-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       border-top-left-radius: 10px;
+    
+    
+    }
+    .plat{
+        padding: 0;
+    }
+    .info-2{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        border-right: .5px solid #B1B1B8 !important ;
+    }
+    .info-3{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+       
+       
+    }
+    .info-2 h4{
+        padding-right: 20px;
+         text-align: right;
+     }
+     .info-2 h4 span{
+         margin-right: 51px;
+         color: green;
+     }
+    .info-3 h4{
+        padding-right: 20px;
+         text-align: right;
+     }
+     .info-3 h4 span{
+         margin-right: 51px;
+         color: green;
+     }
+    .diamond {
+        width: 17px; 
+        height: 16px; 
+       background-color: #F4BF44;
+       border: 3px black solid;
+        margin: 3px 0 0 30px;
+        /* Rotate */
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        /* Rotate Origin */
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        position: absolute;
+        right:90px;
+        top: 50px;
+     }
+     .rit{
+        background-color: #FFFFFF;
+        padding: 0;
+        text-align: center;
+     }
+     a{
+        text-decoration: none !important;;
+        color: #B1B1B8;
+     }
+     .but{
+       
+        text-align: right;
+        border-radius: 90px;
+        background-color: #FFFFFF;
+        border: 1px solid #B1B1B8;
+        width: 137px;
+height: 47px;
+     }
+   .span2{
+        color: #B1B1B8;
+        text-align: left;
+       padding-top: 3px;
+       display: block;
+       padding-left: 6px;
+       font-size: 12px;
+     }
+     .tite2{
+        border-right :1px solid #B1B1B8 !important;
+     }
+     @keyframes left-move {
+        25%{
+            transform: scaleX(.2);
+        }
+        50%{
+          transform: scaleX(.5);
+        }
+        75%{
+            transform: scaleX(.7);
+        }
+        100%{
+            transform: scaleX(1);
+        }
+        
+        
+    }
+    .card{
+        margin-top: 115px;
+        border-radius: 30px;
+       
+max-width: 200px;
+        text-align: right;
+        overflow: hidden;
+        background-color: #B1B1B8;
+    }
+    .card-item{
+        border-bottom: 1px solid black;
+        padding-right: 10px;
+       
+       justify-content: space-between
+    }
+    .card-titel{
+        text-align: right;
+        padding-right: 30px;
+    }
+    .card-titel p{
+color: #8c8c93;
+    }
+    .card-body{
+        font-size: 20px;
+       
+    }
